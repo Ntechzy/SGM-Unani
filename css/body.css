@@ -1,0 +1,133 @@
+@charset "utf-8";
+<style>
+    body { font-family: 'Inter', sans-serif; background: #f8f9fa; }
+    .fade-in {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: all 0.8s;
+}
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .navbar-dark { background: #23272b !important; }
+    .topbar { background:#1e293b; color:#fff; font-size:15px; }
+    .topbar .fa { color: #38bdf8; }
+    .navbar-nav .nav-link { color: #fff !important; position:relative; }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link:hover { color:#38bdf8 !important; }
+    .navbar-nav .dropdown-menu { background:#23272b; }
+    .navbar-nav .dropdown-item { color: #fff; }
+    .navbar-nav .dropdown-item:hover { background:#38bdf8; color:#23272b; }
+    .btn-primary { background:#38bdf8; border:none; }
+    .btn-primary:hover { background:#0ea5e9; }
+    .hero { position:relative; background:linear-gradient(110deg, #0ea5e9 70%, #1e293b 100%); min-height:80vh; color:#fff; display:flex; align-items:center; }
+    .hero .overlay { position: absolute; top:0; left:0; width:100%; height:100%; background:rgba(30,41,59,0.6);}
+    .hero-content { position:relative; z-index:2; }
+    .hero .btn { margin-right:15px; }
+    .experience-badge { background:#fff; color:#23272b; font-weight:700; border-radius:50px; padding:10px 30px; box-shadow:0 3px 18px rgba(0,0,0,0.07); }
+    .progress { height:18px; border-radius:30px; background:#e0e7ef; }
+    .progress-bar { border-radius:30px;}
+    .service-card, .feature-card, .blog-card, .team-card, .testimonial-card { box-shadow:0 3px 18px rgba(0,0,0,0.08); border-radius:18px; background:#fff;}
+    .service-card:hover, .feature-card:hover, .blog-card:hover, .team-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 8px 24px rgba(30,41,59,0.13);
+	transition: all 0.3s;
+}
+    .gallery-filter .btn { margin:5px; }
+    .project-img { border-radius:14px; transition:transform 0.3s; }
+    .project-img:hover { transform:scale(1.05); }
+    .project-overlay { position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(30,41,59,0.65); color:#fff; border-radius:14px; opacity:0; transition:opacity 0.3s;}
+    .project-container:hover .project-overlay { opacity:1; }
+    .faq .card-header { background:#38bdf8; color:#fff; }
+    .faq .btn-link { color:#23272b; font-weight:600; text-decoration:none; }
+    .footer { background:#23272b; color:#fff; padding:50px 0 0 0; }
+    .footer h5 { color:#38bdf8; }
+    .footer a { color:#38bdf8; text-decoration:none; }
+    .footer a:hover { color:#fff; }
+    .footer .social-icon { width:32px; height:32px; line-height:32px; text-align:center; border-radius:50%; background:#1e293b; margin-right:8px; display:inline-block; transition:background 0.2s; }
+    .footer .social-icon:hover { background:#38bdf8; color:#23272b;}
+    .copyright-bar { background:#1e293b; color:#fff; text-align:center; padding:12px 0; font-size:15px; }
+    #backToTop { position:fixed; right:20px; bottom:24px; z-index:99; background:#38bdf8; color:#fff; border:none; border-radius:50px; width:46px; height:46px; font-size:22px; box-shadow:0 3px 18px rgba(0,0,0,0.2); display:none; transition:background 0.2s; }
+    #backToTop:hover { background:#0ea5e9; }
+    /* Carousel Dots Custom */
+    .carousel-indicators [data-bs-target] { background:#38bdf8;}
+    /* Custom styles for dropdown hover */
+    @media (min-width: 992px) {
+      .navbar .dropdown:hover .dropdown-menu { display:block; }
+    }
+    
+	
+	
+	
+	
+	
+	
+	.navbar {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      background: #fff;
+    }
+    .hero {
+      background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+      padding: 60px 0;
+      border-radius: 0 0 2rem 2rem;
+      text-align: center;
+      color: #343a40;
+    }
+    .scroll-container {
+	max-height: 500px;
+	overflow: hidden;
+	position: relative;
+	background: #fff;
+	border-radius: 1rem;
+	
+	margin: 0px;
+    }
+    .scroll-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      animation: scroll-up 18s linear infinite;
+      padding: 2rem;
+    }
+    @keyframes scroll-up {
+      0%   { transform: translateY(0); }
+      100% { transform: translateY(-50%); }
+    }
+    .scroll-card {
+      min-height: 160px;
+      background: #fafaff;
+      border-radius: 1rem;
+     
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      transition: transform 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    .scroll-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 36px rgba(100,100,255,0.13);
+    }
+    .card-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 1rem;
+      object-fit: cover;
+    }
+    .event-date {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+   
+    @media (max-width: 576px) {
+      .scroll-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .card-img {
+        width: 100%;
+        height: 100px;
+      }
+ 
+	
+	
+	
+	
+  </style>/* CSS Document */
